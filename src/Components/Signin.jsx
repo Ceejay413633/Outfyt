@@ -3,6 +3,7 @@ import { FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function Signin() {
   return (
@@ -14,15 +15,15 @@ export default function Signin() {
         </p>
       </div>
       <form action="">
-        <div className="mb-4">
+        <div className="mb-4 animate-slideIn" >
           <div>
-            <label for="email" className="text-white mb-1.5 block">
+            <label for="email" className="text-white mb-1.5 block ">
               Email
             </label>
             <input
               type="text"
               id="name"
-              className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5"
+              className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5 "
             />
           </div>
           <div>
@@ -45,7 +46,7 @@ export default function Signin() {
             </div>
           </div>
         </div>
-        <button className="bg-[#E48045] text-white py-2 px-4 rounded w-full  mt-4 hover:bg-[#E64] ">
+        <button className="bg-[#E48045] text-white py-2 px-4 rounded w-full  mt-4 hover:bg-[#E64] animate-scaleout origin-center">
           Sign Up
         </button>
       </form>
@@ -70,9 +71,9 @@ export default function Signin() {
       <div className="text-center mt-6">
         <p className="text-white">
           Already have an account?{" "}
-          <a href="#" className="text-orange-500 underline">
-            Sign In
-          </a>
+          <Link to="/signup" className="text-orange-500 underline">
+            Sign in
+          </Link>
         </p>
       </div>
     </div>

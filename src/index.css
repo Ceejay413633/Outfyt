@@ -5,3 +5,45 @@
     font-family: poppins, sans-serif;
   }
 }
+
+@layer components {
+  @keyframes slideIn {
+    from{
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes scaleout{
+    from{
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+    .animate-slideIn{
+      animation: slideIn 0.5s ease-in-out;
+    }
+    .animate-scaleout{
+      animation: scaleout 0.5s ease-in-out;
+    }
+  }
+  @keyframes dropdown{
+    from{
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  animate-dropdown{
+    animation: dropdown 0.3s ease-in-out;
+  }

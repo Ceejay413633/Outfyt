@@ -3,6 +3,7 @@ import { FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router";
 
 
 
@@ -36,7 +37,7 @@ export default function Createacc() {
             <input
               type="text"
               id="email"
-              className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5"
+              className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5 "
             />
           </div>
           <div>
@@ -51,11 +52,7 @@ export default function Createacc() {
               />
               <div className="absolute top-1/2 -translate-y-1/2 right-3 z-10 text-white"><FaEyeSlash /></div>
             </div>
-            <input
-              type="password"
-              id="password"
-              className="bg-[#9E9090] p-2 rounded w-full outline-none "
-            />
+           
           </div>
           <div>
            <div>
@@ -77,7 +74,7 @@ export default function Createacc() {
       <div className="border w-10 h-10 border-white rounded-full flex justify-center items-center p-2 text-blue-500"><FaFacebook size={24} /></div>
      </div>
      <div className="text-center mt-6">
-      <p className="text-white">Already have an account? <a href="#" className="text-orange-500 underline">Sign In</a></p>
+      <p className="text-white">Dont have an account?{" "}<Link to="/signin" className="text-orange-500 underline">Sign up</Link></p>
      </div>
     </div>
   );
