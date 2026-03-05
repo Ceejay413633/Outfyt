@@ -27,7 +27,7 @@ export default function Createacc() {
             <input
               type="text"
               id="name"
-              className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5"
+              className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5 text-white"
             />
           </div>
           <div>
@@ -37,7 +37,7 @@ export default function Createacc() {
             <input
               type="text"
               id="email"
-              className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5 "
+              className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5 text-white "
             />
           </div>
           <div>
@@ -48,7 +48,7 @@ export default function Createacc() {
               <input
                 type="text"
                 id="email"
-                className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5"
+                className="bg-[#9E9090] p-2 rounded w-full outline-none mb-2.5 text-white"
               />
               <div className="absolute top-1/2 -translate-y-1/2 right-3 z-10 text-white"><FaEyeSlash /></div>
             </div>
